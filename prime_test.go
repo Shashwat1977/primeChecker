@@ -73,6 +73,7 @@ func Test_checkNumber(t *testing.T) {
 		{"NaN", "abc", "Please enter a correct number."},
 		{"quit", "q", ""},
 		{"QUIT", "Q", ""},
+		{"Not Prime", "12", "12 is not prime, it is divisble by 2"},
 	}
 
 	for _, e := range tests {
